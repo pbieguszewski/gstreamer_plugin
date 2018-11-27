@@ -130,5 +130,7 @@ GstFlowReturn newSampleOccur(GstAppSink *appsink, gpointer user_data)
     frame->h = height;
   }
 
+  gst_sample_unref(sample);
+
   return GST_FLOW_OK;
 }

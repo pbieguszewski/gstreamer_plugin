@@ -16,7 +16,11 @@ typedef struct  _GstSimplePluginSrcClass GstSimplePluginSrcClass;
 
 typedef struct  _GstSimplePluginSrc {
   GstPushSrc element;
-  GstPad* srcPad;
+
+  guint r;
+  guint g;
+  guint b;
+
 } GstSimplePluginSrc;
 
 typedef struct _GstSimplePluginSrcClass
