@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.12 FATAL_ERROR)
 project(simple_plugin VERSION 1.0 LANGUAGES C)
 
-pkg_check_modules(GST REQUIRED IMPORTED_TARGET gstreamer-base-1.0>=1.14)
+pkg_check_modules(GST REQUIRED IMPORTED_TARGET gstreamer-video-1.0>=1.14)
 
 add_library(${PROJECT_NAME} MODULE
   src/gst_simple_plugin_src.c
